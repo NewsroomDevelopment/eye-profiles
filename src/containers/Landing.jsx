@@ -3,6 +3,8 @@ import styled from "styled-components";
 import ImgSrc_mobile from "../images/desktop_background.png";
 import ImgSrc_desktop from "../images/desktop_background.png";
 import { Desktop, MobileAndTablet } from "react-responsive-simple";
+import ellipse from "../images/ellipse.png";
+import Letter from "../components/Letter";
 
 import { device } from "../device";
 
@@ -40,21 +42,28 @@ const Block = styled.div`
 `
 
 const LetterHead = styled.div`
-  padding-left: 5%;
+  margin-left: 5%;
+  h1 {
+    background-color: white;
+    width: fit-content;
+    padding: 1vw;
+    border: 1rem solid #E9C898;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 `
 
 const Header = styled.div`
   color: black;
-  margin-top: 6rem;
+  margin-top: 1rem;
   margin-right: 1rem;
   padding: 3rem;
   left: 10%;
-  top: 15%;
-  line-height: 10em;
+  top: 10%;
+  line-height: 8em;
   font-family: montserrat;
 
   h1 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
   @media ${device.mobile} {
     line-height: 1em !important;
@@ -65,6 +74,40 @@ const Header = styled.div`
   }
 `;
 
+const HeaderOne = styled.div`
+  margin-left: 20vw;
+  h1 {
+    border-bottom: 2px solid black;
+    width: fit-content;
+  }
+`;
+
+const HeaderTwo = styled.div`
+  margin-left: 60vw;
+  margin-top: -5vw;
+  h1 {
+    border-bottom: 2px solid black;
+    width: fit-content;
+  }
+`;
+
+const HeaderThree = styled.div`
+  margin-left: 35vw;
+  h1 {
+    border-bottom: 2px solid black;
+    width: fit-content;
+  }
+`;
+
+const Light = styled.div`
+  background-image: url(../images/ellipse.png);
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+`
+
 const Landing = () => {
   return (
     <div>
@@ -74,7 +117,9 @@ const Landing = () => {
             <img src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/WZKAIDANZVFV5PH57SCIT7XVIE" width="150"></img>
           </EyeLogo>
           <Header>
-            <h1>The Eye Profiles</h1>
+            <HeaderOne><h1>TITLE</h1></HeaderOne>
+            <HeaderTwo><h1>THIS</h1></HeaderTwo>
+            <HeaderThree><h1>IS</h1></HeaderThree>
           </Header>
         </TitleWrapper>
         <Block2></Block2>
@@ -82,11 +127,12 @@ const Landing = () => {
         <LetterHead>
           <h1>Letter From The Editor</h1>
         </LetterHead>
+        <Letter />
       </Desktop>
       <MobileAndTablet>
         <TitleWrapper img={ImgSrc_mobile}>
           <Header>
-            <h1 style={{ "line-height": "2em" }}>Mental health on campus</h1>
+            <h1 style={{ "line-height": "2em" }}>TITLE</h1>
           </Header>
         </TitleWrapper>
       </MobileAndTablet>

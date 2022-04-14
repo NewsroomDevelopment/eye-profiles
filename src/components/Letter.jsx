@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const LetterSection = styled.div`
-  margin: 2%;
-  width: 100%;
+  margin: 5vw;
+  padding-bottom: 5vw;
   border-bottom: 10px solid #C4C4C4;
 `;
 
