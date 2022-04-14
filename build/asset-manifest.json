@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.85b1c90d.chunk.css",
+    "main.js": "/static/js/main.a5373b82.chunk.js",
+    "main.js.map": "/static/js/main.a5373b82.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d8ffc5d0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d8ffc5d0.js.map",
+    "static/js/2.831108a8.chunk.js": "/static/js/2.831108a8.chunk.js",
+    "static/js/2.831108a8.chunk.js.map": "/static/js/2.831108a8.chunk.js.map",
+    "static/js/3.f3f48c39.chunk.js": "/static/js/3.f3f48c39.chunk.js",
+    "static/js/3.f3f48c39.chunk.js.map": "/static/js/3.f3f48c39.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.85b1c90d.chunk.css.map": "/static/css/main.85b1c90d.chunk.css.map",
+    "static/js/2.831108a8.chunk.js.LICENSE.txt": "/static/js/2.831108a8.chunk.js.LICENSE.txt",
+    "static/media/credits.a871c21c.png": "/static/media/credits.a871c21c.png",
+    "static/media/desktop_background.04033b49.png": "/static/media/desktop_background.04033b49.png",
+    "static/media/nav.68112163.png": "/static/media/nav.68112163.png",
+    "static/media/ny_basics_ad.23eea71c.png": "/static/media/ny_basics_ad.23eea71c.png",
+    "static/media/zabar_ad.1b3b9def.png": "/static/media/zabar_ad.1b3b9def.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8ffc5d0.js",
+    "static/js/2.831108a8.chunk.js",
+    "static/css/main.85b1c90d.chunk.css",
+    "static/js/main.a5373b82.chunk.js"
+  ]
+}
