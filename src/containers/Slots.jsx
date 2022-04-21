@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import TV from "../components/TV";
 import TVMobile from "../components/TVMobile"
 import { device } from "../device";
 import slotsplace from "../images/slotsplace.png";
 import { Desktop, MobileAndTablet } from "react-responsive-simple";
-
+import options from "../data/slots.json";
 
 
 const Columns = styled.div`
@@ -34,7 +34,7 @@ const ArticleColumn = styled.div`
   }
 `;
 
-const Title = styled.div`
+const Title = styled.button`
   text-align: center;
   font-size: 5rem;
   background-color: white;
@@ -67,7 +67,7 @@ const MobileTitle = styled.div`
 `;
 
 const Slots = styled.div`
-    background-image: url(${slotsplace});
+    // background-image: url(${slotsplace});
     background-size: 80%;
     margin-left: 5vw;
     margin-top: 3vw;
@@ -77,11 +77,11 @@ const Slots = styled.div`
     height: 40vw;
     position: relative;
     top: 0;
-    /* background-image: url(${(props) => props.imageCall}) */
+    background-image: url(${(props) => props.imageNum == null ? slotsplace : options[props.imageNum]});
 `;
 
 const MobileSlots = styled.div`
-    background-image: url(${slotsplace});
+    // background-image: url(${slotsplace});
     background-size: 80%;
     margin-top: 3vw;
     background-repeat: no-repeat;
@@ -90,14 +90,16 @@ const MobileSlots = styled.div`
     height: 120vw;
     margin-left: 10%;
     top: 0;
-    /* background-image: url(${(props) => props.imageCall}) */
+    background-image: url(${(props) => props.imageNum == null ? slotsplace : options[props.imageNum]});
 `;
 
 const Sections = ({ handleClick }) => {
-
-  function handleClick(){
-    console.log("hi");
+  const [num, setNum] = useState(null);
+  function handleRandom(){
+    console.log('hi');
+    setNum(Math.floor((Math.random() * 10)) + 1);
   }
+  console.log(num);
   return (
     <>
       <Desktop>
@@ -106,15 +108,15 @@ const Sections = ({ handleClick }) => {
             <TV/>
           </TVColumn>
           <ArticleColumn>
-              <Title onClick={handleClick}>Click Here!</Title>
-              <Slots trigger={handleClick} imageCall={Math.random() * 10}></Slots>
+              <Title onClick={handleRandom}>Click Here!</Title>
+              <Slots imageNum={num} ></Slots>
           </ArticleColumn>
         </Columns>
       </Desktop>
       <MobileAndTablet>
         <TVMobile/> 
-        <MobileTitle onClick={handleClick}>Click Here!</MobileTitle>
-        <MobileSlots trigger={handleClick} imageCall={Math.random() * 10}></MobileSlots>
+        <MobileTitle onClick={handleRandom}>Click Here!</MobileTitle>
+        <MobileSlots imageNum={num} ></MobileSlots>
       </MobileAndTablet>
     </>
   );
