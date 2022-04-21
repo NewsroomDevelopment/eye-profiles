@@ -10,7 +10,7 @@ const LetterSection = styled.div`
 const Text = styled.div`
   font-size: 20px;
   font-family: 'Courier New';
-  background: #FFFFFF;
+  background-color: white;
   padding: 1vw;
 `;
 const Letter = () => {
