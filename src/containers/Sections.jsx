@@ -26,7 +26,7 @@ const NavColumn = styled.div`
 `;
 
 const ArticleColumn = styled.div`
-  padding: 5%;
+
 
   @media ${device.mobile} {
     width:100%;
