@@ -61,7 +61,12 @@ const Slots = styled.div`
     /* background-image: url(${(props) => props.imageCall}) */
 `;
 
-const Sections = ({ handleClick }) => {
+const Sections = ({ url }) => {
+
+  function handleClick(){
+    console.log("hi");
+  }
+
   return (
     <>
       <Columns>

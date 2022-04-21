@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import styles from "../App.css";
 import ImgSrc_mobile from "../images/desktop_background.png";
 import ImgSrc_desktop from "../images/desktop_background.png";
 import { Desktop, MobileAndTablet } from "react-responsive-simple";
@@ -45,9 +46,9 @@ const LetterHead = styled.div`
   margin-left: 5%;
   h1 {
     background-color: white;
+    font-family: 'Courier New';
     width: fit-content;
     padding: 1vw;
-    border: 1rem solid #E9C898;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 `
@@ -75,27 +76,24 @@ const Header = styled.div`
 `;
 
 const HeaderOne = styled.div`
-  margin-left: 20vw;
   h1 {
-    border-bottom: 2px solid black;
-    width: fit-content;
+    text-align: center;
+    font-family: 'Courier';
+    font-style: normal;
+    color: #3F3F3F;
+    font-size: 4rem;
+    text-shadow: -5px 5px white;
   }
 `;
 
 const HeaderTwo = styled.div`
-  margin-left: 60vw;
-  margin-top: -5vw;
   h1 {
-    border-bottom: 2px solid black;
-    width: fit-content;
-  }
-`;
-
-const HeaderThree = styled.div`
-  margin-left: 35vw;
-  h1 {
-    border-bottom: 2px solid black;
-    width: fit-content;
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    color: #3F3F3F;
+    text-shadow: -5px 5px white;
   }
 `;
 
@@ -117,9 +115,8 @@ const Landing = () => {
             <img src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/WZKAIDANZVFV5PH57SCIT7XVIE" width="150"></img>
           </EyeLogo>
           <Header>
-            <HeaderOne><h1>TITLE</h1></HeaderOne>
-            <HeaderTwo><h1>THIS</h1></HeaderTwo>
-            <HeaderThree><h1>IS</h1></HeaderThree>
+            <HeaderOne><h1>humans@columbia.edu</h1></HeaderOne>
+            <HeaderTwo><h1>The Random Profile Issue</h1></HeaderTwo>
           </Header>
         </TitleWrapper>
         <Block2></Block2>
