@@ -6,7 +6,6 @@ import { device } from "../device";
 const ArticleWrap = styled.div`
   width: 200%;
   height: 714px;
-  
   margin-top: 70%;
 
   background: #E9C898;
@@ -21,7 +20,6 @@ const ArticleWrap = styled.div`
 
 const Wrap = styled.div`
   position: relative;
-  margins: 10px;
   width: 90%;
   height: 90%;
   left: 5%;
@@ -54,6 +52,7 @@ const ArticleText = styled.p`
   top: 40%;
   position: absolute;
   text-align: center;
+  margin: 2vw;
 `
 
 const Title = styled.p`
@@ -74,18 +73,6 @@ const Author = styled.p`
   color: #313131;
 `;
 
-
-const Details = styled.p`
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: center;
-  color: #000000;
-  margin: 10px;
-`
-
-
 const Article = ({ article }) => {
   return (
     <ArticleWrap>
@@ -95,7 +82,6 @@ const Article = ({ article }) => {
           <ArticleText>
             <Title>{article.title}</Title>
             <Author>{article.author}</Author>
-            <Details>{article.description}</Details>
           </ArticleText>
         </Link>
       </Wrap>
