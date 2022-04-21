@@ -67,6 +67,7 @@ const Sections = () => {
             <Nav />
           </NavColumn> */}
           <ArticleColumn>
+            <Letter />
             {Object.keys(WritingData).map((key, index) => (
               <WritingSection
                 title={key}
@@ -74,9 +75,10 @@ const Sections = () => {
                 linePosition={index % 2 === 0 ? "after" : "before"}
               />
             ))}
+            <AdsSection />
           </ArticleColumn>
         </Columns>
-        {/* <Credits /> */}
+        <Credits />
       </Desktop>
       <MobileAndTablet>
         <Columns>
