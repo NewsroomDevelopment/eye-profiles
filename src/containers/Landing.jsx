@@ -132,9 +132,7 @@ const Landing = () => {
       <MobileAndTablet>
         <TitleWrapper img={ImgSrc_mobile}>
           <Header>
-            <h1 style={{ "line-height": "1em", "border-bottom": "2px solid black", "width": "fit-content"}}>TITLE</h1>
-            <h1 style={{ "line-height": "1em", "border-bottom": "2px solid black", "width": "fit-content" }}>THIS</h1>
-            <h1 style={{ "line-height": "1em", "border-bottom": "2px solid black", "width": "fit-content" }}>IS</h1>
+            <h1 style={{ "line-height": "2em" }}>TITLE</h1>
           </Header>
         </TitleWrapper>
       </MobileAndTablet>
