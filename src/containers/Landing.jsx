@@ -97,13 +97,23 @@ const HeaderTwo = styled.div`
   }
 `;
 
-const Light = styled.div`
-  background-image: url(../images/ellipse.png);
-  width: 100px;
-  height: 100px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+const R = styled.span`
+  color: green;
+`
+const A = styled.span`
+  color: blue;
+`
+const N = styled.span`
+  color: red;
+`
+const D = styled.span`
+  color: purple;
+`
+const O = styled.span`
+  color: yellow;
+`
+const M = styled.span`
+  color: pink;
 `
 
 const Landing = () => {
@@ -116,7 +126,7 @@ const Landing = () => {
           </EyeLogo>
           <Header>
             <HeaderOne><h1>humans@columbia.edu</h1></HeaderOne>
-            <HeaderTwo><h1>The Random Profile Issue</h1></HeaderTwo>
+            <HeaderTwo><h1>The <R>R</R><A>a</A><N>n</N><D>d</D><O>o</O><M>m</M> Profile Issue</h1></HeaderTwo>
           </Header>
         </TitleWrapper>
         <Block2></Block2>

@@ -6,14 +6,14 @@ const WritingData = {
       link: "https://www.columbiaspectator.com/the-eye/2022/04/20/kathy-marsalas-50-years-of-lessons-and-whats-to-come/",
       author: "Ysabella Titi",
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TWZQ2CW22VHQLMIG7MINXJVK3E.jpg",
-      type: "normal",
+      color: "#B0DD8D",
     },
     {
       title: "Maad Da Visionary: Stories of Philadelphia, Tacos, and Superheroes",
       link: "https://www.columbiaspectator.com/the-eye/2022/04/20/maad-da-visionary-stories-of-philadelphia-tacos-and-superheroes/",
       author: "Mayra Kalaora",
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/O5K3A3AY6JDSHA7VN4MVTEDYVM.JPG",
-      type: "normal",
+      color: "#EAAAAA",
     },
     {
       title:
@@ -21,7 +21,7 @@ const WritingData = {
       link: "https://www.columbiaspectator.com/the-eye/2022/04/20/from-analytic-philosophy-to-video-games-mustafa-eyceoz-tries-not-to-lose-sight-of-the-important-things/",
       author: "Jonathan Truong",
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TTJTZ5TKOBFRPBKCSKUXGHMWI4.jpg",
-      type: "normal",
+      color: "#77C3C4",
     },
     {
       title:
@@ -29,7 +29,7 @@ const WritingData = {
       link: "https://www.columbiaspectator.com/the-eye/2022/04/20/raquel-turner-on-tarot-and-turbulence/",
       author: "Mason Cannon",
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/EE7GLDIZIJHYJDLVX7VVRGMBMY.jpg",
-      type: "left"
+      color: "#F3AA54"
     },
     {
       title:
@@ -37,21 +37,21 @@ const WritingData = {
       link: "https://www.columbiaspectator.com/the-eye/2022/04/20/jack-of-all-trades-master-of-at-least-three-a-mid-midterms-conversation-with-guillermo-peschard-rioboo/",
       author: "Isabella Noonen",
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/M4PMLDQBRBFPNBQGWEA2TK34ZE.jpg",
-      type: "normal"
+      color: "#7D7D9E"
     },
     {
       title: "Legos, Bagels, and Barnard: Katelyn Lam on Finding Comp Sci and Herself",
       link: "",
       author: "Caelan Bailey",
       img: "TK",
-      type: "normal"
+      color: "#74BD7E"
     },
     {
       title: "Choosing a Major Without a Plan: Hilda Gitchell’s Pioneering Approach to College",
       link: "https://www.columbiaspectator.com/the-eye/2022/04/20/choosing-a-major-without-a-plan-hilda-gitchells-pioneering-approach-to-college/",
       author: "Sadie Ellis-Caleo",
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TW4KLUQ2KRA7DEV2T34MOZBYFY.jpg",
-      type: "normal"
+      color: "#F97272"
     },
     {
       title:
@@ -59,7 +59,7 @@ const WritingData = {
       link: "https://www.columbiaspectator.com/the-eye/2022/04/20/the-girl-in-the-traveling-thrift-store-scented-leather-pants/",
       author: "Haleigh Stewart",
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/M76QPHN2EFEUJHMXUDVU2QPUEA.JPG",
-      type: "normal"
+      color: "#E2FFFC"
     },
     {
       title:
@@ -67,7 +67,7 @@ const WritingData = {
       link: "https://www.columbiaspectator.com/the-eye/2022/04/20/the-ultimate-challenge-tycho-bogdanowitsch-dreams-of-rocket-science/",
       author: "Ann Vettikkal",
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7ATM447FENB3PGMOYW7IQV7C2A.JPG",
-      type: "normal"
+      color: "#FFD29C"
     }
   ]
 };

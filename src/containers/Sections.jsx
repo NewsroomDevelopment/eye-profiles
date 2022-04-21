@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
-import Test from "../components/Test";
 import Nav from "../components/Nav";
-import AdsSection from "./AdsSection";
 import WritingSection from "./WritingSection";
 import Credits from "./Credits";
 

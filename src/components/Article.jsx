@@ -8,7 +8,7 @@ const ArticleWrap = styled.div`
   height: 714px;
   margin-top: 70%;
 
-  background: #E9C898;
+  background: ${(props)=> props.color};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
@@ -75,7 +75,7 @@ const Author = styled.p`
 
 const Article = ({ article }) => {
   return (
-    <ArticleWrap>
+    <ArticleWrap color={article.color}>
       <Wrap>
         <Link href={article.link} target="_blank" rel="noreferrer">
           <ArticleImg src={article.img} />
