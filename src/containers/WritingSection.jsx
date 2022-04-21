@@ -3,14 +3,54 @@ import styled from "styled-components";
 import SectionTitle from "../components/SectionTitle";
 import Article from "../components/Article"
 
+const Panel1 = styled.div`
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: 1200px) {
+    width: 23%;
+  }
+`;
+const Panel2 = styled.div`
+  margin-top: 10%;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: 1200px) {
+    width: 23%;
+  }
+`;
+
+const PanelContainer = styled.div`
+  display: flex;
+  width: 70%;
+  margin-left:7%;
+  
+  
+  justify-content: space-between;
+`;
 
 const WritingSection = ({ title, articles, linePosition }) => {
   return (
     <>
-      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      {articles.map((article) => (
-        <Article article={article} />
-      ))}
+      <PanelContainer>
+        <Panel1>
+          {articles.map(function(article, i){
+            if(i%2 == 0){
+              return <Article article={article} />
+            }
+          })}
+        </Panel1>
+        <Panel2>
+          {articles.map(function(article, i){
+            if(i%2 != 0){
+              return <Article article={article} />
+            }
+          })}
+        </Panel2>
+      </PanelContainer>
     </>
   );
 };

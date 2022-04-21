@@ -1,5 +1,4 @@
-const WritingData = {
-  news: [
+const WritingData = {data:[
     {
       title:
         "Overwhelmed college counseling services struggle to offer all students immediate access to care",
@@ -31,8 +30,7 @@ const WritingData = {
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WWSWYBZA3BBUFMQGDI7GFHB474.jpg",
       type:"left"
     },
-  ],
-  opinion: [
+  
     {
       title:
         "The student veteran dilemma: The difficulty of finding a new community after leaving one behind",
@@ -55,8 +53,7 @@ const WritingData = {
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7K6UJ47GK5DSRL75VVRWMY4HU4.gif",
       type:"normal"
     },
-  ],
-  "a&e": [
+ 
     {
       title:
         "Columbia dancers battle the culture of silence that the dance world promotes",
@@ -112,8 +109,7 @@ const WritingData = {
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5IHNZGY7INDRXC2OE3HUDZ7NNY.JPG",
       type:"normal"
     },
-  ],
-  sports: [
+  
     {
       title:
         "In a ‘Lighter Equals Faster’ Culture, Runners Must Combat a Culture of Disordered Eating",
@@ -130,8 +126,7 @@ const WritingData = {
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/MKIV52ONRBGVPJ2YSHPB5FDTTU.jpg",
       type: "normal"
     },
-  ],
-  podcasts: [
+  
     {
       title: "How are you feeling? A community check-in",
       link: "https://www.columbiaspectator.com/podcasts/2021/05/04/how-are-you-feeling-a-community-check-in/",
@@ -139,8 +134,7 @@ const WritingData = {
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/4Y2DM6XAVVE7XMYWHDHV3MZ53I.jpg",
       type: "normal"
     },
-  ],
-  spectrum: [
+  
     {
       title: "Learning to deal with the noise of New York City and within you",
       link: "https://www.columbiaspectator.com/spectrum/2021/11/08/learning-to-deal-with-the-noise-of-new-york-city-and-within-you/",
@@ -221,7 +215,7 @@ const WritingData = {
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/2ZSITS5LMNEJNKVHA4Z5AK5524.jpg",
       type:"left"
     },
-  ],
+  ]
 };
 
 export default WritingData;
