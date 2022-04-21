@@ -70,7 +70,7 @@ const Header = styled.div`
     line-height: 1em !important;
     margin-top: -2rem;
     h1 {
-      font-size: 3rem !important;
+      font-size: 7rem !important;
     }
   }
 `;
@@ -104,7 +104,14 @@ const Light = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-`
+`;
+
+const MobileHead = styled.div`
+  line-height: 1em;
+  border-bottom: 2px solid black;
+  width: fit-content;
+  font-size: 4rem;
+  font-family: montserrat`
 
 const Landing = () => {
   return (
@@ -129,7 +136,7 @@ const Landing = () => {
       <MobileAndTablet>
         <TitleWrapper img={ImgSrc_mobile}>
           <Header>
-            <h1 style={{ "line-height": "1em", "border-bottom": "2px solid black", "width": "fit-content"}}>TITLE</h1>
+            <h1 style={{ "line-height": "1em", "border-bottom": "2px solid black", "width": "fit-content" }}>TITLE</h1>
             <h1 style={{ "line-height": "1em", "border-bottom": "2px solid black", "width": "fit-content" }}>THIS</h1>
             <h1 style={{ "line-height": "1em", "border-bottom": "2px solid black", "width": "fit-content" }}>IS</h1>
           </Header>

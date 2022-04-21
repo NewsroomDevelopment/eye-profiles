@@ -4,11 +4,11 @@ import styled from "styled-components";
 import { device } from "../device";
 
 const ArticleWrap = styled.div`
-  width: 586px;
+  width: 200%;
   height: 714px;
-  left: 246px;
-  top: 4506px;
-  margin: 30px;
+  
+  margin-top: 70%;
+
   background: #E9C898;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -18,6 +18,7 @@ const ArticleWrap = styled.div`
     width: 95vw;
   }
 `;
+
 const Wrap = styled.div`
   position: relative;
   margins: 10px;
@@ -34,7 +35,7 @@ const Link = styled.a`
 `;
 
 const ArticleImg = styled.img`
-  width: 386px;
+  width: 75%;
   height: 242px;
   background: #C4C4C4;
   left: 13%;
@@ -59,7 +60,7 @@ const Title = styled.p`
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2em;
   color: #313131;
   margin-bottom: 0px;
 `

@@ -9,6 +9,7 @@ import Credits from "./Credits";
 
 import WritingData from "../utils/WritingData";
 import VisualData from "../utils/VisualData";
+import { Desktop, MobileAndTablet } from "react-responsive-simple";
 
 import { device } from "../device";
 
@@ -25,7 +26,7 @@ const NavColumn = styled.div`
 `;
 
 const ArticleColumn = styled.div`
-  padding: 5%;
+
 
   @media ${device.mobile} {
     width:100%;
@@ -60,21 +61,42 @@ const Title = styled.div`
 const Sections = () => {
   return (
     <>
-      <Columns>
-        {/* <NavColumn>
-          <Nav />
-        </NavColumn> */}
-        <ArticleColumn>
-          {Object.keys(WritingData).map((key, index) => (
-            <WritingSection
-              title={key}
-              articles={WritingData[key]}
-              linePosition={index % 2 === 0 ? "after" : "before"}
-            />
-          ))}
-        </ArticleColumn>
-      </Columns>
-      {/* <Credits /> */}
+      <Desktop>
+        <Columns>
+          {/* <NavColumn>
+            <Nav />
+          </NavColumn> */}
+          <ArticleColumn>
+            <Letter />
+            {Object.keys(WritingData).map((key, index) => (
+              <WritingSection
+                title={key}
+                articles={WritingData[key]}
+                linePosition={index % 2 === 0 ? "after" : "before"}
+              />
+            ))}
+            <AdsSection />
+          </ArticleColumn>
+        </Columns>
+        <Credits />
+      </Desktop>
+      <MobileAndTablet>
+        <Columns>
+          {/* <NavColumn>
+            <Nav />
+          </NavColumn> */}
+          <ArticleColumn>
+            {Object.keys(WritingData).map((key, index) => (
+              <WritingSection
+                title={key}
+                articles={WritingData[key]}
+                linePosition={index % 2 === 0 ? "after" : "before"}
+              />
+            ))}
+          </ArticleColumn>
+        </Columns>
+        {/* <Credits /> */} 
+      </MobileAndTablet>
     </>
   );
 };
