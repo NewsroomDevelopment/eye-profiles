@@ -42,7 +42,7 @@ const ArticleImg = styled.img`
   top: 8%;
   position: absolute;
   @media ${device.mobile} {
-    width: 100%;
+    width: 75%;
     height: 60vw;
   }
 `;

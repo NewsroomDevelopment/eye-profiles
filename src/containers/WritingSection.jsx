@@ -2,27 +2,51 @@ import React from "react";
 import styled from "styled-components";
 import SectionTitle from "../components/SectionTitle";
 import Article from "../components/Article"
+import { device } from "../device";
 
 const Panel1 = styled.div`
-  width: 90%;
+  width: 23%;
   height: auto;
   display: flex;
   flex-direction: column;
-  @media only screen and (min-width: 1200px) {
-    width: 23%;
+  @media ${device.tablet} {
+    display:none;
+  }
+  @media ${device.mobile} {
+    display:none;
   }
 `;
 const Panel2 = styled.div`
   margin-top: 10%;
-  width: 90%;
+  width: 23%;
   height: auto;
   display: flex;
   flex-direction: column;
-  @media only screen and (min-width: 1200px) {
-    width: 23%;
+  @media ${device.tablet} {
+    display:none;
+  }
+  @media ${device.mobile} {
+    display:none;
   }
 `;
 
+const MobilePanel = styled.div`
+  display: none;
+  @media ${device.tablet} {
+    margin-top: 10%;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  @media ${device.mobile} {
+    margin-top: 10%;
+    width: 23%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+`;
 const PanelContainer = styled.div`
   display: flex;
   width: 70%;
@@ -30,6 +54,7 @@ const PanelContainer = styled.div`
   
   
   justify-content: space-between;
+  
 `;
 
 const WritingSection = ({ title, articles, linePosition }) => {
@@ -50,7 +75,16 @@ const WritingSection = ({ title, articles, linePosition }) => {
             }
           })}
         </Panel2>
+        <MobilePanel>
+          {articles.map(function(article, i){
+            if(i%2 != 0){
+              return <Article article={article} />
+            }
+          })}
+        </MobilePanel>
+        
       </PanelContainer>
+      
     </>
   );
 };
