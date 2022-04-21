@@ -8,8 +8,10 @@ const LetterSection = styled.div`
 `;
 
 const Text = styled.div`
-  font-size: 16px;
-  color: rgba(28, 81, 133, 1);
+  font-size: 20px;
+  font-family: 'Courier New';
+  background: #FFFFFF;
+  padding: 1vw;
 `;
 const Letter = () => {
   return (
