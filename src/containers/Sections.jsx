@@ -5,7 +5,6 @@ import Letter from "../components/Letter";
 import Nav from "../components/Nav";
 import AdsSection from "./AdsSection";
 import WritingSection from "./WritingSection";
-import VisualSection from "./VisualSection";
 import Credits from "./Credits";
 
 import WritingData from "../utils/WritingData";
@@ -66,20 +65,10 @@ const Sections = () => {
           <Nav />
         </NavColumn> */}
         <ArticleColumn>
-          <Letter />
-          <Title>Writing</Title>
           {Object.keys(WritingData).map((key, index) => (
             <WritingSection
               title={key}
               articles={WritingData[key]}
-              linePosition={index % 2 === 0 ? "after" : "before"}
-            />
-          ))}
-          <Title>Visuals</Title>
-          {Object.keys(VisualData).map((key, index) => (
-            <VisualSection
-              title={key}
-              articles={VisualData[key]}
               linePosition={index % 2 === 0 ? "after" : "before"}
             />
           ))}
