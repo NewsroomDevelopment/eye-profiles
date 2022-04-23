@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { device } from "../device";
 
 const ArticleWrap = styled.div`
-  width: 200%;
+  width: 100%;
   height: 714px;
   margin-top: 70%;
 
@@ -35,13 +35,12 @@ const Link = styled.a`
 const ArticleImg = styled.img`
   width: 75%;
   height: 242px;
-  background: #C4C4C4;
+  background: white;
+  padding-top: 6vw;
   left: 13%;
-  top: 8%;
-  position: absolute;
+  align: left;
   @media ${device.mobile} {
     width: 100%;
-    height: 60vw;
   }
 `;
 

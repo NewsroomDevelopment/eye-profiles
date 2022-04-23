@@ -13,6 +13,10 @@ import { device } from "../device";
 const Columns = styled.div`
   display: flex;
   width: 100%;
+  
+  @media ${device.mobile} {
+    display: block !important;
+  }
 `;
 
 const ArticleColumn = styled.div`

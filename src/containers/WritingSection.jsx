@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import SectionTitle from "../components/SectionTitle";
-import Article from "../components/Article"
+import Article from "../components/Article";
+import { device } from "../device";
+
 
 const Panel1 = styled.div`
   width: 90%;
@@ -27,9 +29,11 @@ const PanelContainer = styled.div`
   display: flex;
   width: 70%;
   margin-left:7%;
-  
-  
   justify-content: space-between;
+
+  @media ${device.mobile} {
+    display: block;
+  }
 `;
 
 const WritingSection = ({ title, articles, linePosition }) => {
