@@ -4,12 +4,10 @@ import styled from "styled-components";
 import { device } from "../device";
 
 const ArticleWrap = styled.div`
-  width: 200%;
+  width: 30vw;
   height: 714px;
-  
   margin-top: 70%;
-
-  background: #E9C898;
+  background: ${(props)=> props.color};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
@@ -21,7 +19,6 @@ const ArticleWrap = styled.div`
 
 const Wrap = styled.div`
   position: relative;
-  margins: 10px;
   width: 90%;
   height: 90%;
   left: 5%;
@@ -36,14 +33,16 @@ const Link = styled.a`
 
 const ArticleImg = styled.img`
   width: 75%;
-  height: 242px;
-  background: #C4C4C4;
+  height: 15vw;
+  background: white;
+  padding-top: 3vw;
   left: 13%;
-  top: 8%;
-  position: absolute;
+  object-fit: cover;
+  align: left;
   @media ${device.mobile} {
-    width: 75%;
-    height: 60vw;
+    width: 90%;
+    height: 50vw;
+    padding: 2vw;
   }
 `;
 
@@ -51,9 +50,11 @@ const ArticleImg = styled.img`
 const ArticleText = styled.p`
   text-align: center;
   align-items: center;
-  top: 40%;
   position: absolute;
   text-align: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 1vw;
 `
 
 const Title = styled.p`
@@ -74,28 +75,15 @@ const Author = styled.p`
   color: #313131;
 `;
 
-
-const Details = styled.p`
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: center;
-  color: #000000;
-  margin: 10px;
-`
-
-
 const Article = ({ article }) => {
   return (
-    <ArticleWrap>
+    <ArticleWrap color={article.color}>
       <Wrap>
         <Link href={article.link} target="_blank" rel="noreferrer">
           <ArticleImg src={article.img} />
           <ArticleText>
             <Title>{article.title}</Title>
             <Author>{article.author}</Author>
-            <Details>{article.description}</Details>
           </ArticleText>
         </Link>
       </Wrap>

@@ -26,7 +26,7 @@ const TitleWrapper = styled.div`
 const EyeLogo = styled.div`
   top: 0%;
   left: 0%;
-  width: 5%;
+  width: 10%;
 `
 
 const Block2 = styled.div`
@@ -64,13 +64,43 @@ const Header = styled.div`
   font-family: montserrat;
 
   h1 {
-    font-size: 7rem;
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    color: #3F3F3F;
+    text-shadow: -8px 3px white;
+    font-size: 6rem;
   }
+
+  h3 {
+    text-align: center;
+    font-family: 'Courier';
+    font-style: normal;
+    color: #3F3F3F;
+    font-size: 3rem;
+    text-shadow: -5px 5px white;
+  }
+  
   @media ${device.mobile} {
-    line-height: 1em !important;
-    margin-top: -2rem;
+    margin-top: 2rem;
     h1 {
-      font-size: 7rem !important;
+      text-align: center;
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 700;
+      color: #3F3F3F;
+      text-shadow: -5px 2px white;
+      font-size: 3rem;
+    }
+  
+    h3 {
+      text-align: center;
+      font-family: 'Courier';
+      font-style: normal;
+      color: #3F3F3F;
+      font-size: 4vw;
+      text-shadow: -3px 1px white;
     }
   }
 `;
@@ -93,25 +123,28 @@ const HeaderTwo = styled.div`
     font-style: normal;
     font-weight: 700;
     color: #3F3F3F;
-    text-shadow: -5px 5px white;
+    text-shadow: -8px 3px white;
   }
 `;
 
-const Light = styled.div`
-  background-image: url(../images/ellipse.png);
-  width: 100px;
-  height: 100px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-`;
-
-const MobileHead = styled.div`
-  line-height: 1em;
-  border-bottom: 2px solid black;
-  width: fit-content;
-  font-size: 4rem;
-  font-family: montserrat`
+const R = styled.span`
+  color: #8BBA91;
+`
+const A = styled.span`
+  color: #AADBCE;
+`
+const N = styled.span`
+  color: #DF948F;
+`
+const D = styled.span`
+  color: #99B1DE;
+`
+const O = styled.span`
+  color: #E3B57E;
+`
+const M = styled.span`
+  color: #DBADAA;
+`
 
 const Landing = () => {
   return (
@@ -119,11 +152,11 @@ const Landing = () => {
       <Desktop>
         <TitleWrapper img={ImgSrc_desktop}>
           <EyeLogo>
-            <img src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/WZKAIDANZVFV5PH57SCIT7XVIE" width="150"></img>
+            <img src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/WZKAIDANZVFV5PH57SCIT7XVIE" width="180"></img>
           </EyeLogo>
           <Header>
             <HeaderOne><h1>humans@columbia.edu</h1></HeaderOne>
-            <HeaderTwo><h1>The Random Profile Issue</h1></HeaderTwo>
+            <HeaderTwo><h1>The <R>R</R><A>a</A><N>n</N><D>d</D><O>o</O><M>m</M> Profile Issue</h1></HeaderTwo>
           </Header>
         </TitleWrapper>
         <Block2></Block2>
@@ -136,9 +169,8 @@ const Landing = () => {
       <MobileAndTablet>
         <TitleWrapper img={ImgSrc_mobile}>
           <Header>
-            <h1 style={{ "line-height": "1em", "border-bottom": "2px solid black", "width": "fit-content" }}>TITLE</h1>
-            <h1 style={{ "line-height": "1em", "border-bottom": "2px solid black", "width": "fit-content" }}>THIS</h1>
-            <h1 style={{ "line-height": "1em", "border-bottom": "2px solid black", "width": "fit-content" }}>IS</h1>
+            <h3 style={{ "line-height": "2em" }}>humans@columbia.edu</h3>
+            <h1 style={{ "line-height": "2em" }}>The <R>R</R><A>a</A><N>n</N><D>d</D><O>o</O><M>m</M> Profile Issue</h1>
           </Header>
         </TitleWrapper>
       </MobileAndTablet>
