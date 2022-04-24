@@ -72,7 +72,7 @@ const Header = styled.div`
     font-style: normal;
     font-weight: 700;
     color: #3F3F3F;
-    text-shadow: -8px 3px white;
+    text-shadow: -5px 3px white;
     font-size: 6rem;
   }
 
@@ -82,7 +82,7 @@ const Header = styled.div`
     font-style: normal;
     color: #3F3F3F;
     font-size: 3rem;
-    text-shadow: -5px 5px white;
+    text-shadow: -5px 3px white;
   }
   
   @media ${device.mobile} {
@@ -94,7 +94,7 @@ const Header = styled.div`
       font-weight: 700;
       color: #3F3F3F;
       text-shadow: -5px 2px white;
-      font-size: 3rem;
+      font-size: 5rem;
     }
   
     h3 {
