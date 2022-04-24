@@ -5,7 +5,7 @@ import { device } from "../device";
 import TV from "../images/placeholder.png";
 
 const NavSection = styled.div`
-  background-image: url(${TV});
+  background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/spectator/NCNLE6BM2VDMFDWUHMIWNIIOEY.jpg);
   background-size: 80%;
   padding-top: 5vw;
   padding-bottom: 5vw;

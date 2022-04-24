@@ -19,50 +19,22 @@ const Letter = () => {
       <Text>
         <p>Dear readers,</p>
         <p>
-          Columbia can often feel like a pressure cooker. It accepts some of the
-          most competitive applicants in the world, many who have never been
-          encouraged to slow down and take a breath, many who were always
-          encouraged to do the opposite.{" "}
+          Human stories are the very core of what we do here at The Eye. They drive us. Our goal as a family of writers and eclectic humans is to wade past the pleasantries of “What’s your major?” and “Where are you from?” in search of the hidden idiosyncrasies that are the stuff of late-night, meaning-of-life conversations between close friends.
+          {" "}
         </p>
         <p>
-          With finals approaching, we wanted to not only give you a better look
-          at what mental health looks like on Columbia’s campus but also provide
-          you with some tips, tricks, and resources to lessen your anxiety
-          during this very stressful time.{" "}
+          After a brief hiatus, The Eye is back, and we look forward to once again serving the Columbia community through narrative journalism. As a fresh group of editors, we wanted to find a way to revitalize our beloved magazine while maintaining its longstanding commitment to the pursuit of stories that might otherwise slip through the headlines. With our current group of trainees, we aimed to do two things in particular: encourage them to establish their own voices and teach them that everyone has a story to tell, if only you can find it.{" "}
         </p>
         <p>
-          In this edition, please exercise caution while reading these articles,
-          as some of them deal with topics of disordered eating, depression, and
-          other mental health topics. They discuss stories of disordered eating
-          in the dance world, on cross-country and track teams, and in the
-          Columbia and Barnard dining halls. Other pieces reflect on resident
-          advisors’ struggles in finding community within their living
-          situations as they simultaneously feel unprepared to deal with their
-          residents’ mental health struggles.{" "}
+        Our process was simple: assign each of our nine trainees randomly-generated UNIs sourced from the Columbia directory and tell them, “Go for it!” Each of them sat down with their subject informally to begin to understand them as a human being and again on the record to unearth the story. They poked and prodded at the banal until they found the beautiful.{" "}
         </p>
         <p>
-          However, this edition also aims to highlight those who are working to
-          raise mental health awareness and cultivate positive mindsets. Read
-          through this edition to find members of the Columbia community hoping
-          to destigmatize speaking up about struggling with mental health,
-          at-home bakers using their hobby to de-stress and take care of
-          themselves, and students finding community through Columbia
-          Confessions in times of need. We hope that in reading their stories,
-          you feel encouraged to prioritize your own mental health and that of
-          others.{" "}
+        Once our trainees were armed with interviews and research, ready to write, we ended up wondering: Should we use first or last names? Last would be more in line with typical journalistic convention, a sign of respect and formality assigned to the subject. But, in the end we decided that first names fit the heart of the issue. It showed the randomly selected subjects’ exceptionality, affability, and, above all, their humanity.
+{" "}
         </p>
         <p>
-          At Spectator, we have focused our efforts this past year on changing
-          the way that we grapple with mental health and burnout among our
-          staff. We have implemented a reasonable end time for production
-          nights; expanded our use of content warnings; elected our first head
-          of Diversity, Equity, and Inclusion on Spectator’s managing board,
-          Natalie Park; established a weekly-meeting DEI committee that
-          discusses ways to improve our reporting and staff culture; and voted
-          in new policies for our Community Standards. However, there remains
-          more that we can do—both as members of Spectator and Columbia
-          students—to combat the stress culture that is so pervasive within the
-          Columbia community.{" "}
+        We hope you enjoy what we’ve come up with. Who knows? In this issue, between Raquel Rocha Turner’s tarot cards and Tycho Bogdanowitsch’s rocket ships, between the superheroes that fly around Maad Da Visionary’s imagination and the fireplace in Katelyn Lam’s dorm decorated with letters written in Thai, you might find something that speaks to you.
+{" "}
         </p>
         <p>
           As our tenures on Spectator’s corporate board come to a close, we
@@ -71,11 +43,10 @@ const Letter = () => {
           of the year ramps up. We promise you deserve it.{" "}
         </p>
         <p>
-          Wishing you a meaningful end to the semester, <br />
+          With love, <br />
           <p>
-            Sarah Braka, Editor in Chief <br />
-            Elizabeth Karpen, Managing Editor <br />
-            Tamarah Wallace, Publisher
+          Annie Cheng, Derek Ng, Lilienne Shore Kilgore-Brown, Megan Lunny, and Isabella Aldrete<br />
+            The editors at The Eye<br />
           </p>
         </p>
       </Text>

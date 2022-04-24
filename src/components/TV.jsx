@@ -5,8 +5,7 @@ import { device } from "../device";
 import TV from "../images/placeholder.png";
 
 const NavSection = styled.div`
-  background-image: url(${TV});
-  background-li
+  background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/spectator/NCNLE6BM2VDMFDWUHMIWNIIOEY.jpg);
   background-size: 80%;
   margin-left: 4vw;
   margin-top: -5vw;
@@ -28,6 +27,10 @@ const Title = styled.p`
   font-style: normal;
   font-weight: 700;
   font-size: 2em;
+  text-align: center;
+  width: 400px;
+  margin-left: 140px;
+  margin-top: 150px;
   color: #313131;
   margin-bottom: 0px;
   @media ${device.mobile} {
