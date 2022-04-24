@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: orange;
+  background: url(https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7TTGC5IFB5F3DAVYLNIWJMF7AA.jpg);
+  background-size: contain;
 
 }
 
