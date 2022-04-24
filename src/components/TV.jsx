@@ -35,6 +35,7 @@ const Title = styled.p`
   @media ${device.mobile} {
     font-size: 1em;
   }
+
 `
 
 const Link = styled.a`

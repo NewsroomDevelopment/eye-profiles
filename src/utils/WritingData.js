@@ -1,5 +1,6 @@
 const WritingData = {
   'data': [
+    {},
     {
       title:
         "Kathy Marsala’s 50 Years of Lessons and What’s to Come",
@@ -24,7 +25,7 @@ const WritingData = {
       author: "Jonathan Truong",
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TTJTZ5TKOBFRPBKCSKUXGHMWI4.jpg",
       color: "#77C3C4",
-      slot: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ELWLZA5YUBFFRASMAX42VJC4VM.png",
+      slots: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ELWLZA5YUBFFRASMAX42VJC4VM.png",
     },
     {
       title:

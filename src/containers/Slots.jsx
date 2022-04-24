@@ -81,7 +81,7 @@ const Slots = styled.div`
     height: 40vw;
     position: relative;
     top: 0;
-    background-image: url(${(props) => props.imageNum == null ? slotsplace : WritingData['data'][props.imageNum].slots});
+    background-image: url(${(props) => props.imageNum == 0 ? slotsplace : WritingData['data'][props.imageNum].slots});
 `;
 
 const MobileSlots = styled.div`
@@ -101,7 +101,11 @@ const Sections = ({ handleClick }) => {
   const [num, setNum] = useState(0);
   function handleRandom(){
     console.log('hi');
-    setNum(Math.floor((Math.random() * WritingData['data'].length)));
+    var tmp = Math.floor((Math.random() * WritingData['data'].length)) + 1;
+    if(tmp > WritingData['data'].length -1){
+      tmp = WritingData['data'].length-1;
+    }
+    setNum(tmp);
   }
   console.log(num);
   console.log(WritingData['data'][num]);

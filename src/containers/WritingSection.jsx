@@ -59,22 +59,24 @@ const WritingSection = ({ title, articles, linePosition }) => {
       <PanelContainer>
         <Panel1>
           {articles.map(function(article, i){
-            if(i%2 == 0){
+            if(i%2 != 0){
               return <Article article={article} />
             }
           })}
         </Panel1>
         <Panel2>
           {articles.map(function(article, i){
-            if(i%2 != 0){
+            if(i%2 == 0 && i != 0){
               return <Article article={article} />
             }
           })}
         </Panel2>
         <MobilePanel>
           {articles.map(function(article, i){
-            
+            if(i != 0){
               return <Article article={article} />
+            }
+             
             
           })}
         </MobilePanel>
