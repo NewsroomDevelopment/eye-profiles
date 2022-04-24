@@ -21,10 +21,35 @@ const NavSection = styled.div`
   border-right: 10px solid #784A3C;
 `;
 
-const TVSection = () => {
+
+const Title = styled.p`
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+  width: 400px;
+  margin-left: 140px;
+  margin-top: 150px;
+  color: #313131;
+  margin-bottom: 0px;
+  @media ${device.mobile} {
+    font-size: 1em;
+  }
+`
+
+const Link = styled.a`
+  text-decoration: none;
+  width: inherit;
+`;
+
+const TVSection = ({article}) => {
   return (
+    <Link href={article.link} target="_blank" rel="noreferrer">
     <NavSection>
+      <Title>{article.title}</Title>
     </NavSection>
+    </Link>
   );
 };
 

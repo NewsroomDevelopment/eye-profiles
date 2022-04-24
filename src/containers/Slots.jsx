@@ -6,6 +6,7 @@ import { device } from "../device";
 import slotsplace from "../images/slotsplace.png";
 import { Desktop, MobileAndTablet } from "react-responsive-simple";
 import options from "../data/slots.json";
+import WritingData from "../utils/WritingData";
 
 
 const Columns = styled.div`
@@ -80,7 +81,7 @@ const Slots = styled.div`
     height: 40vw;
     position: relative;
     top: 0;
-    background-image: url(${(props) => props.imageNum == null ? slotsplace : options[props.imageNum]});
+    background-image: url(${(props) => WritingData['data'][props.imageNum].img});
 `;
 
 const MobileSlots = styled.div`
@@ -93,22 +94,23 @@ const MobileSlots = styled.div`
     height: 120vw;
     margin-left: 10%;
     top: 0;
-    background-image: url(${(props) => props.imageNum == null ? slotsplace : options[props.imageNum]});
+    background-image: url(${(props) => WritingData['data'][props.imageNum].img});
 `;
 
 const Sections = ({ handleClick }) => {
-  const [num, setNum] = useState(null);
+  const [num, setNum] = useState(0);
   function handleRandom(){
     console.log('hi');
-    setNum(Math.floor((Math.random() * 10)) + 1);
+    setNum(Math.floor((Math.random() * WritingData['data'].length)));
   }
   console.log(num);
+  console.log(WritingData['data'][num]);
   return (
     <>
       <Desktop>
         <Columns>
           <TVColumn>
-            <TV/>
+            <TV article={WritingData['data'][num]}/>
           </TVColumn>
           <ArticleColumn>
               <Title onClick={handleRandom}>Click Me!</Title>
@@ -117,7 +119,7 @@ const Sections = ({ handleClick }) => {
         </Columns>
       </Desktop>
       <MobileAndTablet>
-        <TVMobile/> 
+        <TVMobile article={WritingData['data'][num]} /> 
         <MobileTitle onClick={handleRandom}>Click Me!</MobileTitle>
         <MobileSlots imageNum={num} ></MobileSlots>
       </MobileAndTablet>

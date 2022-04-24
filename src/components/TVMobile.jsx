@@ -17,10 +17,17 @@ const NavSection = styled.div`
   top: 0;
 `;
 
-const TVSection = () => {
+const Link = styled.a`
+  text-decoration: none;
+  width: inherit;
+`;
+
+const TVSection = ( {article} ) => {
   return (
-    <NavSection>
+    <Link href={article.link} target="_blank" rel="noreferrer">
+    <NavSection href={article.link} target="_blank" rel="noreferrer">
     </NavSection>
+    </Link>
   );
 };
 

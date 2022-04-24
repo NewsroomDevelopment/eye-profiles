@@ -1,5 +1,5 @@
 const WritingData = {
-  data: [
+  'data': [
     {
       title:
         "Kathy Marsala’s 50 Years of Lessons and What’s to Come",
