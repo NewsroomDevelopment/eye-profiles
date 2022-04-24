@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../device";
+
 
 const LetterSection = styled.div`
   margin: 5vw;
@@ -12,6 +14,10 @@ const Text = styled.div`
   font-family: 'Raleway';
   background-color: #C0E4DE;
   padding: 1vw;
+  @media ${device.mobile} {
+    padding: 3vw;
+    font-size: 18px;
+  }
 `;
 const Letter = () => {
   return (

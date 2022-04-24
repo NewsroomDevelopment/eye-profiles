@@ -39,7 +39,7 @@ const Title = styled.div`
   font-family: 'Playfair Display';
   font-size: 5rem;
   background-color: #DF948F;
-  width: 80%;
+  width: 70%;
   font-weight: 900;
   margin-left: 4vw;
   padding: 1vw;
@@ -56,12 +56,13 @@ const MobileTitle = styled.div`
   font-family: 'Playfair Display';
   font-size: 2rem;
   background-color: #DF948F;
-  width: fit-content;
+  width: 70%;
   font-weight: 900;
-  padding: 1vw;
+  padding: 2vw;
   border: 0.5rem solid #DBADAA;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-left: 29%;
+  margin: 5vw;
+  margin-left: 11vw;
   color: white;
   :hover{
     cursor: pointer;

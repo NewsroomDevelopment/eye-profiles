@@ -54,6 +54,14 @@ const LetterHead = styled.div`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1rem solid #AADBCE;
   }
+  @media ${device.mobile} {
+    margin-top: 2rem;
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      width: 85%;
+    }
+  }
 `
 
 const Header = styled.div`
@@ -176,6 +184,10 @@ const Landing = () => {
             <h1 style={{ "line-height": "2em" }}>The <R>R</R><A>a</A><N>n</N><D>d</D><O>o</O><M>m</M> Profile Issue</h1>
           </Header>
         </TitleWrapper>
+        <LetterHead>
+          <h1>Letter From The Editor</h1>
+        </LetterHead>
+        <Letter />
       </MobileAndTablet>
     </div>
   );
