@@ -90,7 +90,8 @@ const Header = styled.div`
       font-weight: 700;
       color: #3F3F3F;
       text-shadow: -5px 2px white;
-      font-size: 4rem;
+      font-size: 3rem;
+      font-s
     }
   
     h3 {
