@@ -13,7 +13,8 @@ const ArticleWrap = styled.div`
   align-items: center;
   text-align: center;
   @media ${device.mobile} {
-    width: 95vw;
+    width: 70vw;
+    padding-left: 20%;
   }
 `;
 

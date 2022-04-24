@@ -33,16 +33,10 @@ const Panel2 = styled.div`
 
 const MobilePanel = styled.div`
   display: none;
-  @media ${device.tablet} {
-    margin-top: 10%;
-    width: 60%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
+  
   @media ${device.mobile} {
     margin-top: 10%;
-    width: 23%;
+    width: 15%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -79,9 +73,9 @@ const WritingSection = ({ title, articles, linePosition }) => {
         </Panel2>
         <MobilePanel>
           {articles.map(function(article, i){
-            if(i%2 != 0){
+            
               return <Article article={article} />
-            }
+            
           })}
         </MobilePanel>
         

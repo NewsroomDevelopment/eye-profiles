@@ -22,8 +22,8 @@ const Columns = styled.div`
 const ArticleColumn = styled.div`
   width: 100%;
   @media ${device.mobile} {
-    width:100%;
-    padding-right:0%;
+    width:50%;
+    margin-left:11%;
   }
 `;
 
