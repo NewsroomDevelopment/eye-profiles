@@ -29,12 +29,11 @@ const IssueHead = styled.div`
 
   padding-left: 3vw;
   h1 {
-    
     background-color: #768DB9;
     color: white;
     font-family: 'Playfair Display';
-    width: fit-content;
-    padding-left: 10vw;
+    width: 60%;
+    padding-left: 11vw;
     padding-right: 10vw;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1rem solid #99B1DE;

@@ -91,11 +91,11 @@ const MobileSlots = styled.div`
     background-repeat: no-repeat;
     overflow: hidden;
     width: 100%;
-    height: 120vw;
+    height: 100vw;
     margin-left: 10%;
     top: 0;
-    background-image: url(${(props) => WritingData['data'][props.imageNum].slots});
-`;
+    background-image: url(${(props) => props.imageNum == 0 ? slotsplace : WritingData['data'][props.imageNum].slots});
+    `;
 
 const Sections = ({ handleClick }) => {
   const [num, setNum] = useState(0);

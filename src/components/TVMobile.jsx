@@ -29,6 +29,9 @@ const Title = styled.p`
   width: 50vw;
   margin: 18vw;
   color: #313131;
+  @media ${device.mobile} {
+    font-size: 1.5em; 
+  }
 `
 
 const TVSection = ( {article} ) => {

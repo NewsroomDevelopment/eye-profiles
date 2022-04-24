@@ -16,6 +16,7 @@ const ArticleWrap = styled.div`
     width: 70vw;
     padding-left: 20%;
     height: 500px;
+    margin-bottom: 10vw;
   }
 `;
 
