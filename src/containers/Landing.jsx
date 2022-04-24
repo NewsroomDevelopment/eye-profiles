@@ -45,11 +45,13 @@ const Block = styled.div`
 const LetterHead = styled.div`
   margin-left: 5%;
   h1 {
-    background-color: white;
-    font-family: 'Courier New';
+    background-color: #9ACABD;
+    color: white;
+    font-family: 'Playfair Display';
     width: fit-content;
     padding: 1vw;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1rem solid #AADBCE;
   }
 `
 

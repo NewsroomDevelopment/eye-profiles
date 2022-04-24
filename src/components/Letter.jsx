@@ -9,7 +9,7 @@ const LetterSection = styled.div`
 
 const Text = styled.div`
   font-size: 20px;
-  font-family: 'Courier New';
+  font-family: 'Playfair Display';
   background-color: white;
   padding: 1vw;
 `;
