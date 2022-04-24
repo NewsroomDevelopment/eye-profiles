@@ -3,7 +3,7 @@ import styled from "styled-components";
 import TV from "../components/TV";
 import TVMobile from "../components/TVMobile"
 import { device } from "../device";
-import slotsplace from "../images/slotsplace.png";
+import slotsplace from "../images/slotspace.gif";
 import { Desktop, MobileAndTablet } from "react-responsive-simple";
 import options from "../data/slots.json";
 import WritingData from "../utils/WritingData";
@@ -81,7 +81,7 @@ const Slots = styled.div`
     height: 40vw;
     position: relative;
     top: 0;
-    background-image: url(${(props) => WritingData['data'][props.imageNum].img});
+    background-image: url(${(props) => props.imageNum == null ? slotsplace : WritingData['data'][props.imageNum].slots});
 `;
 
 const MobileSlots = styled.div`
@@ -94,7 +94,7 @@ const MobileSlots = styled.div`
     height: 120vw;
     margin-left: 10%;
     top: 0;
-    background-image: url(${(props) => WritingData['data'][props.imageNum].img});
+    background-image: url(${(props) => WritingData['data'][props.imageNum].slots});
 `;
 
 const Sections = ({ handleClick }) => {

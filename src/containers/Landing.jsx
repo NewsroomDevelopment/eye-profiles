@@ -1,10 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import styles from "../App.css";
-import ImgSrc_mobile from "../images/desktop_background.png";
-import ImgSrc_desktop from "../images/desktop_background.png";
 import { Desktop, MobileAndTablet } from "react-responsive-simple";
-import ellipse from "../images/ellipse.png";
 import Letter from "../components/Letter";
 
 import { device } from "../device";
@@ -161,7 +158,7 @@ const Landing = () => {
   return (
     <div>
       <Desktop>
-        <TitleWrapper img={ImgSrc_desktop}>
+        <TitleWrapper>
           <EyeLogo>
             <img src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/WZKAIDANZVFV5PH57SCIT7XVIE" width="180"></img>
           </EyeLogo>
@@ -178,7 +175,7 @@ const Landing = () => {
         <Letter />
       </Desktop>
       <MobileAndTablet>
-        <TitleWrapper img={ImgSrc_mobile}>
+        <TitleWrapper>
           <Header>
             <h3 style={{ "line-height": "2em" }}>humans@columbia.edu</h3>
             <h1 style={{ "line-height": "2em" }}>The <R>R</R><A>a</A><N>n</N><D>d</D><O>o</O><M>m</M> Profile Issue</h1>

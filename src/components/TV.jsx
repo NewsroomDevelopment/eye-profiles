@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { device } from "../device";
 
-import TV from "../images/placeholder.png";
-
 const NavSection = styled.div`
   background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/spectator/NCNLE6BM2VDMFDWUHMIWNIIOEY.jpg);
   background-size: 80%;
@@ -28,11 +26,12 @@ const Title = styled.p`
   font-weight: 700;
   font-size: 2em;
   text-align: center;
-  width: 400px;
-  margin-left: 140px;
-  margin-top: 150px;
+  width: 30vw;
+  top: 50%;
+  left: 50%;
+  margin: 10vw;
+  margin-top: 15vw;
   color: #313131;
-  margin-bottom: 0px;
   @media ${device.mobile} {
     font-size: 1em;
   }
