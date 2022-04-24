@@ -6,7 +6,7 @@ import { device } from "../device";
 const ArticleWrap = styled.div`
   width: 30vw;
   height: 714px;
-  margin-top: 70%;
+  margin-top: 30%;
   background: ${(props)=> props.color};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -45,8 +45,8 @@ const ArticleImg = styled.img`
   object-fit: cover;
   align: left;
   @media ${device.mobile} {
-    width: 90%;
-    height: 50vw;
+    width: 80%;
+    height: 40vw;
     padding: 2vw;
   }
 `;
