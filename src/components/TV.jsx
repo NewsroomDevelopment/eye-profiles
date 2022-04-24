@@ -18,7 +18,7 @@ const NavSection = styled.div`
   height: 40vw;
   position: sticky;
   top: 0;
-  border-right: 10px solid #C4C4C4;
+  border-right: 10px solid #784A3C;
 `;
 
 const TVSection = () => {

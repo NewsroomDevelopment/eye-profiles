@@ -20,6 +20,7 @@ const TitleWrapper = styled.div`
 
   @media ${device.mobile} {
     background-position: 40%;
+    height: 100vh;
   }
 `;
 
@@ -31,14 +32,14 @@ const EyeLogo = styled.div`
 
 const Block2 = styled.div`
   width: 60%;
-  border-top: 10px solid #C4C4C4;
+  border-top: 10px solid #784A3C;
 `
 
 const Block = styled.div`
   width: 40%;
   float: right;
-  border-bottom: 10px solid #C4C4C4;
-  border-left: 10px solid #C4C4C4;
+  border-bottom: 10px solid #784A3C;
+  border-left: 10px solid #784A3C;
   height: 6vw;
 `
 

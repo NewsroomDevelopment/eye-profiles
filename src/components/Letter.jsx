@@ -4,13 +4,13 @@ import styled from "styled-components";
 const LetterSection = styled.div`
   margin: 5vw;
   padding-bottom: 5vw;
-  border-bottom: 10px solid #C4C4C4;
+  border-bottom: 10px solid #784A3C;
 `;
 
 const Text = styled.div`
   font-size: 20px;
-  font-family: 'Playfair Display';
-  background-color: white;
+  font-family: 'Raleway';
+  background-color: #C0E4DE;
   padding: 1vw;
 `;
 const Letter = () => {

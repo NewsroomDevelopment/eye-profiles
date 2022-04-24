@@ -41,9 +41,9 @@ const WritingData = {
     },
     {
       title: "Legos, Bagels, and Barnard: Katelyn Lam on Finding Comp Sci and Herself",
-      link: "",
+      link: "https://www.columbiaspectator.com/the-eye/2022/04/20/legos-bagels-and-barnard-katelyn-lam-on-finding-comp-sci-and-herself/",
       author: "Caelan Bailey",
-      img: "TK",
+      img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/25YPJDH3KBCKVON6Z2IPFIEDPM.jpg",
       color: "#74BD7E"
     },
     {

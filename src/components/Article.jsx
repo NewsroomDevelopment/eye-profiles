@@ -15,6 +15,7 @@ const ArticleWrap = styled.div`
   @media ${device.mobile} {
     width: 70vw;
     padding-left: 20%;
+    height: 500px;
   }
 `;
 
@@ -25,6 +26,9 @@ const Wrap = styled.div`
   left: 5%;
   background: #FFFFFF;
   text-align: center;
+  @media ${device.mobile} {
+    height: 80%;
+  }
 `
 
 const Link = styled.a`
@@ -65,6 +69,9 @@ const Title = styled.p`
   font-size: 2em;
   color: #313131;
   margin-bottom: 0px;
+  @media ${device.mobile} {
+    font-size: 1em;
+  }
 `
 
 const Author = styled.p`
@@ -74,6 +81,9 @@ const Author = styled.p`
   font-size: 24px;
   text-align: center;
   color: #313131;
+  @media ${device.mobile} {
+    font-size: 0.8em;
+  }
 `;
 
 const Article = ({ article }) => {

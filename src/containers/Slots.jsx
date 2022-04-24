@@ -11,7 +11,7 @@ import options from "../data/slots.json";
 const Columns = styled.div`
   display: flex;
   width: 100%;
-  border-bottom: 10px solid #C4C4C4;
+  border-bottom: 10px solid #784A3C;
   padding-bottom: 5vw;
 `;
 
@@ -34,17 +34,18 @@ const ArticleColumn = styled.div`
   }
 `;
 
-const Title = styled.button`
+const Title = styled.div`
   text-align: center;
+  font-family: 'Playfair Display';
   font-size: 5rem;
-  background-color: white;
-  width: fit-content;
+  background-color: #DF948F;
+  width: 80%;
   font-weight: 900;
   margin-left: 4vw;
   padding: 1vw;
-  border: 1rem solid #E9C898;
+  border: 1rem solid #DBADAA;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+  color: white;
   :hover{
     cursor: pointer;
   }
@@ -52,15 +53,16 @@ const Title = styled.button`
 
 const MobileTitle = styled.div`
   text-align: center;
+  font-family: 'Playfair Display';
   font-size: 2rem;
-  background-color: white;
+  background-color: #DF948F;
   width: fit-content;
   font-weight: 900;
   padding: 1vw;
-  border: 0.5rem solid #E9C898;
+  border: 0.5rem solid #DBADAA;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-left: 29%;
-
+  color: white;
   :hover{
     cursor: pointer;
   }
@@ -108,14 +110,14 @@ const Sections = ({ handleClick }) => {
             <TV/>
           </TVColumn>
           <ArticleColumn>
-              <Title onClick={handleRandom}>Click Here!</Title>
+              <Title onClick={handleRandom}>Click Me!</Title>
               <Slots imageNum={num} ></Slots>
           </ArticleColumn>
         </Columns>
       </Desktop>
       <MobileAndTablet>
         <TVMobile/> 
-        <MobileTitle onClick={handleRandom}>Click Here!</MobileTitle>
+        <MobileTitle onClick={handleRandom}>Click Me!</MobileTitle>
         <MobileSlots imageNum={num} ></MobileSlots>
       </MobileAndTablet>
     </>
