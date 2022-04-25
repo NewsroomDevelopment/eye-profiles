@@ -18,7 +18,6 @@ const Panel1 = styled.div`
   }
 `;
 const Panel2 = styled.div`
-  margin-top: 10%;
   width: 23%;
   height: auto;
   display: flex;
@@ -42,15 +41,21 @@ const MobilePanel = styled.div`
     flex-direction: column;
   }
 `;
+
 const PanelContainer = styled.div`
   display: flex;
-  width: 70%;
+  width: 60%;
   margin-left:7%;
   justify-content: space-between;
+  margin-bottom: 10vw;
 
   @media ${device.mobile} {
     display: block;
   }
+`;
+
+const Last = styled.div`
+  margin: 50vw;
 `;
 
 const WritingSection = ({ title, articles, linePosition }) => {

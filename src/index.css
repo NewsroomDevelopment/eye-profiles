@@ -5,9 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7TTGC5IFB5F3DAVYLNIWJMF7AA.jpg);
-  background-size: contain;
-
+  background-image: url("images/background.png");
+  background-size: 200px;
 }
 
 code {

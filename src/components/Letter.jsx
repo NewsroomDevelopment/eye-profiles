@@ -2,21 +2,22 @@ import React from "react";
 import styled from "styled-components";
 import { device } from "../device";
 
-
 const LetterSection = styled.div`
-  margin: 5vw;
+  margin-top: 5vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
   padding-bottom: 5vw;
-  border-bottom: 10px solid #784A3C;
 `;
 
 const Text = styled.div`
   font-size: 20px;
-  font-family: 'Raleway';
+  font-family: 'Playfair Display';
   background-color: #C0E4DE;
+  font-weight: 100;
   padding: 1vw;
   @media ${device.mobile} {
     padding: 3vw;
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 const Letter = () => {
@@ -41,12 +42,6 @@ const Letter = () => {
         <p>
         We hope you enjoy what we’ve come up with. Who knows? In this issue, between Raquel Rocha Turner’s tarot cards and Tycho Bogdanowitsch’s rocket ships, between the superheroes that fly around Maad Da Visionary’s imagination and the fireplace in Katelyn Lam’s dorm decorated with letters written in Thai, you might find something that speaks to you.
 {" "}
-        </p>
-        <p>
-          As our tenures on Spectator’s corporate board come to a close, we
-          wanted to thank you for a year of reading and learning with us. Now,
-          it is time for all of us to slow down and take a breath before the end
-          of the year ramps up. We promise you deserve it.{" "}
         </p>
         <p>
           With love, <br />

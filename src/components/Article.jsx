@@ -4,18 +4,17 @@ import styled from "styled-components";
 import { device } from "../device";
 
 const ArticleWrap = styled.div`
-  width: 30vw;
-  height: 714px;
-  margin-top: 30%;
-  background: ${(props)=> props.color};
+  width: 40vw;
+  height: 35vw;
+  margin-top: 20%;
+  background:#9ACABD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   text-align: center;
   @media ${device.mobile} {
     width: 70vw;
-    padding-left: 20%;
-    height: 500px;
+    height: 90vw;
     margin-bottom: 10vw;
   }
 `;
@@ -27,9 +26,6 @@ const Wrap = styled.div`
   left: 5%;
   background: #FFFFFF;
   text-align: center;
-  @media ${device.mobile} {
-    height: 80%;
-  }
 `
 
 const Link = styled.a`
@@ -67,23 +63,29 @@ const Title = styled.p`
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.8vw;
   color: #313131;
   margin-bottom: 0px;
-  @media ${device.mobile} {
-    font-size: 1em;
+  @media ${device.laptopS} {
+    font-size: 1.8vw;
   }
+  @media ${device.mobile} {
+    font-size: 4vw;
+  }
+
 `
 
 const Author = styled.p`
   font-family: 'Playfair Display';
   font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   color: #313131;
+  @media ${device.laptopS} {
+    font-size: 1vw;
+  }
   @media ${device.mobile} {
-    font-size: 0.8em;
+    font-size: 3vw;
   }
 `;
 

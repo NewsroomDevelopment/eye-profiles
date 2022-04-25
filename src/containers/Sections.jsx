@@ -26,17 +26,24 @@ const ArticleColumn = styled.div`
 
 const IssueHead = styled.div`
   margin-left: 5%;
-
-  padding-left: 3vw;
   h1 {
-    background-color: #768DB9;
+    padding-bottom: 30vw;
+    text-align: center;
+    background-color: #9ACABD;
     color: white;
     font-family: 'Playfair Display';
-    width: 60%;
-    padding-left: 11vw;
-    padding-right: 10vw;
+    width: 90%;
+    padding: 1vw;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 1rem solid #99B1DE;
+    border: 1rem solid #AADBCE;
+  }
+  @media ${device.mobile} {
+    margin-top: 2rem;
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      width: 85%;
+    }
   }
 `
 
@@ -45,7 +52,7 @@ const Sections = () => {
     <>
     <IssueHead>
           <h1>All Features</h1>
-        </IssueHead>
+    </IssueHead>
       <Desktop>
         <Columns>
           {/* <NavColumn>

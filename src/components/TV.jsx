@@ -1,41 +1,39 @@
 import React from "react";
 import styled from "styled-components";
 import { device } from "../device";
+import tv from "../images/tv.jpg";
 
 const NavSection = styled.div`
-  background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/spectator/NCNLE6BM2VDMFDWUHMIWNIIOEY.jpg);
-  background-size: 80%;
-  margin-left: 4vw;
-  margin-top: -5vw;
-  margin-bottom: -5vw;
-  padding-top: 2vw;
+  margin-top: 1vw;
   background-repeat: no-repeat;
   overflow: hidden;
   background-position: center;
-  width: 100%;
-  height: 40vw;
+  width: 75%;
+  height: 30vw;
   position: sticky;
-  top: 0;
-  border-right: 10px solid #784A3C;
+  margin-top: 5vw;
+  padding: 2vw;
+  border: 1rem solid #AADBCE;
 `;
 
 
 const Title = styled.p`
   font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2em;
-  text-align: center;
-  width: 30vw;
-  top: 50%;
-  left: 50%;
-  margin: 10vw;
-  margin-top: 15vw;
+  font-size: 1.5em;
+  font-weight: 600;
+  @media ${device.mobile} {
+    font-size: 1em;
+  }
+`
+
+const Image = styled.p`
   color: #313131;
   @media ${device.mobile} {
     font-size: 1em;
   }
-
+  img {
+    max-width: 100%;
+  }
 `
 
 const Link = styled.a`
@@ -47,6 +45,7 @@ const TVSection = ({article}) => {
   return (
     <Link href={article.link} target="_blank" rel="noreferrer">
     <NavSection>
+      <Image><img src={article.img}></img></Image>
       <Title>{article.title}</Title>
     </NavSection>
     </Link>

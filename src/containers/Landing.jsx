@@ -3,21 +3,21 @@ import styled from "styled-components";
 import styles from "../App.css";
 import { Desktop, MobileAndTablet } from "react-responsive-simple";
 import Letter from "../components/Letter";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import { device } from "../device";
 
 const TitleWrapper = styled.div`
   overflow: hidden;
   width: 100%;
-  height: 120vh;
-  justify-content: space-between;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  height: 60vh;
   @media ${device.mobile} {
     background-position: 40%;
-    height: 100vh;
+    height: 30vw;
+  }
+  @media ${device.laptopS} {
+    background-position: 40%;
+    height: 40vw;
   }
 `;
 
@@ -25,28 +25,44 @@ const EyeLogo = styled.div`
   top: 0%;
   left: 0%;
   width: 10%;
+  @media ${device.mobile} {
+    img {
+      width: 25vw;
+    }
+  }
 `
-
-const Block2 = styled.div`
-  width: 60%;
-  border-top: 10px solid #784A3C;
-`
-
-const Block = styled.div`
-  width: 40%;
-  float: right;
-  border-bottom: 10px solid #784A3C;
-  border-left: 10px solid #784A3C;
-  height: 6vw;
-`
-
 const LetterHead = styled.div`
   margin-left: 5%;
   h1 {
+    padding-bottom: 30vw;
+    text-align: center;
     background-color: #9ACABD;
     color: white;
     font-family: 'Playfair Display';
-    width: fit-content;
+    width: 90%;
+    padding: 1vw;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1rem solid #AADBCE;
+  }
+  @media ${device.mobile} {
+    margin-top: 2rem;
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      width: 85%;
+    }
+  }
+`
+
+const SlotsHead = styled.div`
+  margin-left: 5%;
+  h1 {
+    padding-bottom: 30vw;
+    text-align: center;
+    background-color: #9ACABD;
+    color: white;
+    font-family: 'Playfair Display';
+    width: 90%;
     padding: 1vw;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1rem solid #AADBCE;
@@ -63,31 +79,26 @@ const LetterHead = styled.div`
 
 const Header = styled.div`
   color: black;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  padding: 3rem;
-  left: 10%;
-  top: 10%;
-  line-height: 8em;
+  margin: 1vw;
+  line-height: 2em;
   font-family: montserrat;
 
-  h1 {
-    text-align: center;
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    color: #3F3F3F;
-    text-shadow: -5px 3px white;
-    font-size: 6rem;
-  }
-
-  h3 {
-    text-align: center;
-    font-family: 'Courier';
-    font-style: normal;
-    color: #3F3F3F;
-    font-size: 3rem;
-    text-shadow: -5px 3px white;
+  @media ${device.laptopS} {
+    h1 {
+      text-align: center;
+      font-family: 'Playfair Display';
+      font-style: normal;
+      color: #3F3F3F;
+      font-size: 7vw;
+    }
+    h3 {
+      font-size: 2vw;
+      text-align: center;
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 700;
+      color: #3F3F3F;
+    }
   }
   
   @media ${device.mobile} {
@@ -98,17 +109,15 @@ const Header = styled.div`
       font-style: normal;
       font-weight: 700;
       color: #3F3F3F;
-      text-shadow: -5px 2px white;
-      font-size: 5rem;
+      font-size: 7vw;
     }
   
     h3 {
       text-align: center;
-      font-family: 'Courier';
+      font-family: 'Playfair Display';
       font-style: normal;
       color: #3F3F3F;
       font-size: 4vw;
-      text-shadow: -3px 1px white;
     }
   }
 `;
@@ -116,22 +125,21 @@ const Header = styled.div`
 const HeaderOne = styled.div`
   h1 {
     text-align: center;
-    font-family: 'Courier';
+    font-family: 'Playfair Display';
     font-style: normal;
     color: #3F3F3F;
-    font-size: 4rem;
-    text-shadow: -5px 5px white;
+    font-size: 7vw;
   }
 `;
 
 const HeaderTwo = styled.div`
   h1 {
+    font-size: 2vw;
     text-align: center;
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
     color: #3F3F3F;
-    text-shadow: -8px 3px white;
   }
 `;
 
@@ -163,28 +171,35 @@ const Landing = () => {
             <img src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/WZKAIDANZVFV5PH57SCIT7XVIE" width="180"></img>
           </EyeLogo>
           <Header>
-            <HeaderOne><h1>humans@columbia.edu</h1></HeaderOne>
-            <HeaderTwo><h1>The <R>R</R><A>a</A><N>n</N><D>d</D><O>o</O><M>m</M> Profile Issue</h1></HeaderTwo>
+            <HeaderOne><h1>"HUMANS@COLUMBIA.EDU"</h1></HeaderOne>
+            <HeaderTwo><h1>The Eye's <R>R</R><A>a</A><N>n</N><D>d</D><O>o</O><M>m</M> Profile Issue</h1></HeaderTwo>
           </Header>
         </TitleWrapper>
-        <Block2></Block2>
-        <Block></Block>
         <LetterHead>
-          <h1>Letter From The Editor</h1>
+        <h1><a href="https://www.columbiaspectator.com/the-eye/2022/04/24/letter-from-the-editors-the-profile-issue/">Letter From The Editor</a></h1>
         </LetterHead>
         <Letter />
+        <SlotsHead>
+          <h1>"Randomly generate" a UNI below!</h1>
+        </SlotsHead>
       </Desktop>
       <MobileAndTablet>
+      <EyeLogo>
+            <img src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/WZKAIDANZVFV5PH57SCIT7XVIE" width="180"></img>
+          </EyeLogo>
         <TitleWrapper>
           <Header>
-            <h3 style={{ "line-height": "2em" }}>humans@columbia.edu</h3>
-            <h1 style={{ "line-height": "2em" }}>The <R>R</R><A>a</A><N>n</N><D>d</D><O>o</O><M>m</M> Profile Issue</h1>
+            <h1>"HUMANS@COLUMBIA.EDU"</h1>
+            <h3 style={{ "line-height": "1.2em" }}>The Eye's <br /><R>R</R><A>a</A><N>n</N><D>d</D><O>o</O><M>m</M> Profile Issue</h3>
           </Header>
         </TitleWrapper>
         <LetterHead>
-          <h1>Letter From The Editor</h1>
+          <h1><a href="https://www.columbiaspectator.com/the-eye/2022/04/24/letter-from-the-editors-the-profile-issue/">Letter From The Editor</a></h1>
         </LetterHead>
         <Letter />
+        <SlotsHead>
+          <h1>"Randomly generate" a UNI below!</h1>
+        </SlotsHead>
       </MobileAndTablet>
     </div>
   );
