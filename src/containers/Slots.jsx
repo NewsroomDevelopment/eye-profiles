@@ -95,9 +95,12 @@ const Sections = ({ handleClick }) => {
   const [num, setNum] = useState(0);
   function handleRandom(){
     console.log('hi');
-    var tmp = Math.floor((Math.random() * WritingData['data'].length)) + 1;
-    if(tmp > WritingData['data'].length -1){
-      tmp = WritingData['data'].length-1;
+    var tmp = Math.floor((Math.random() * WritingData['data'].length));
+    if(tmp > WritingData['data'].length -2){
+      tmp = WritingData['data'].length-2;
+    }
+    else if(tmp == 0){
+      tmp = 1;
     }
     setNum(tmp);
   }
