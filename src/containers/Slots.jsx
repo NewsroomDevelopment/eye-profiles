@@ -12,7 +12,6 @@ import WritingData from "../utils/WritingData";
 const Columns = styled.div`
   display: flex;
   width: 100%;
-  padding-bottom: 5vw;
 `;
 
 const TVColumn = styled.div`

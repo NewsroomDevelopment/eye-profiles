@@ -78,6 +78,15 @@ const WritingData = {
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7ATM447FENB3PGMOYW7IQV7C2A.JPG",
       color: "#FFD29C",
       slots: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/VSPEJPOK6VF6DI2ZYWVKB5PGEA.png"
+    },
+    {
+      title:
+        "Credits",
+      link: "https://www.columbiaspectator.com/the-eye/2022/04/20/the-ultimate-challenge-tycho-bogdanowitsch-dreams-of-rocket-science/",
+      author: "Ann Vettikkal",
+      img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7ATM447FENB3PGMOYW7IQV7C2A.JPG",
+      color: "#FFD29C",
+      slots: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/VSPEJPOK6VF6DI2ZYWVKB5PGEA.png"
     }
   ]
 };

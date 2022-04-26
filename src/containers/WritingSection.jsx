@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SectionTitle from "../components/SectionTitle";
 import Article from "../components/Article";
+import Credits from "../components/Credits";
 import { device } from "../device";
 
 
@@ -63,31 +64,35 @@ const WritingSection = ({ title, articles, linePosition }) => {
     <>
       <PanelContainer>
         <Panel1>
-          {articles.map(function(article, i){
-            if(i%2 != 0){
+          {articles.map(function (article, i) {
+            if (i % 2 != 0) {
               return <Article article={article} />
             }
           })}
         </Panel1>
         <Panel2>
-          {articles.map(function(article, i){
-            if(i%2 == 0 && i != 0){
+          {articles.map(function (article, i) {
+            if (i == 10) {
+              return <Credits article={article} />
+            }
+            else if (i % 2 == 0 && i != 0) {
               return <Article article={article} />
             }
           })}
         </Panel2>
         <MobilePanel>
-          {articles.map(function(article, i){
-            if(i != 0){
+          {articles.map(function (article, i) {
+            if (i == 10) {
+              return <Credits article={article} />
+            } 
+            else if (i != 0) {
               return <Article article={article} />
             }
-             
-            
           })}
         </MobilePanel>
-        
+
       </PanelContainer>
-      
+
     </>
   );
 };

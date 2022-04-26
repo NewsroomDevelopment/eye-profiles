@@ -10,7 +10,6 @@ import { device } from "../device";
 const Columns = styled.div`
   display: flex;
   width: 100%;
-  
   @media ${device.mobile} {
     display: block !important;
   }
@@ -27,7 +26,6 @@ const ArticleColumn = styled.div`
 const IssueHead = styled.div`
   margin-left: 5%;
   h1 {
-    padding-bottom: 30vw;
     text-align: center;
     background-color: #9ACABD;
     color: white;
@@ -38,7 +36,6 @@ const IssueHead = styled.div`
     border: 1rem solid #AADBCE;
   }
   @media ${device.mobile} {
-    margin-top: 2rem;
     h1 {
       font-size: 2rem;
       text-align: center;

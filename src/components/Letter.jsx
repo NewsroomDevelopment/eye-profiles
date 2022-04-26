@@ -3,10 +3,9 @@ import styled from "styled-components";
 import { device } from "../device";
 
 const LetterSection = styled.div`
-  margin-top: 5vw;
+  margin-top: 2vw;
   margin-left: 8vw;
   margin-right: 8vw;
-  padding-bottom: 5vw;
 `;
 
 const Text = styled.div`

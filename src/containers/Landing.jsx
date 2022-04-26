@@ -10,15 +10,6 @@ import { device } from "../device";
 const TitleWrapper = styled.div`
   overflow: hidden;
   width: 100%;
-  height: 60vh;
-  @media ${device.mobile} {
-    background-position: 40%;
-    height: 30vw;
-  }
-  @media ${device.laptopS} {
-    background-position: 40%;
-    height: 40vw;
-  }
 `;
 
 const EyeLogo = styled.div`
@@ -176,7 +167,7 @@ const Landing = () => {
           </Header>
         </TitleWrapper>
         <LetterHead>
-        <h1><a href="https://www.columbiaspectator.com/the-eye/2022/04/24/letter-from-the-editors-the-profile-issue/">Letter From The Editor</a></h1>
+        <h1><a href="https://www.columbiaspectator.com/the-eye/2022/04/24/letter-from-the-editors-the-profile-issue/">Letter From The Editors</a></h1>
         </LetterHead>
         <Letter />
         <SlotsHead>
@@ -194,7 +185,7 @@ const Landing = () => {
           </Header>
         </TitleWrapper>
         <LetterHead>
-          <h1><a href="https://www.columbiaspectator.com/the-eye/2022/04/24/letter-from-the-editors-the-profile-issue/">Letter From The Editor</a></h1>
+          <h1><a href="https://www.columbiaspectator.com/the-eye/2022/04/24/letter-from-the-editors-the-profile-issue/">Letter From The Editors</a></h1>
         </LetterHead>
         <Letter />
         <SlotsHead>
