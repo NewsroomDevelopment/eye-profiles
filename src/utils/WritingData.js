@@ -11,7 +11,7 @@ const WritingData = {
       slots: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/2D4O7U2HYVDDVIM4SZP6M7ISTI.png",
     },
     {
-      title: "Maad Da Visionary: Stories of Philadelphia, Tacos, and Superheroes",
+      title: "Maad Da Visionary: Stories of Rap, Tacos, and Superheroes",
       link: "https://www.columbiaspectator.com/the-eye/2022/04/20/maad-da-visionary-stories-of-philadelphia-tacos-and-superheroes/",
       author: "Mayra Kalaora",
       img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/O5K3A3AY6JDSHA7VN4MVTEDYVM.JPG",
@@ -80,13 +80,12 @@ const WritingData = {
       slots: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/VSPEJPOK6VF6DI2ZYWVKB5PGEA.png"
     },
     {
-      title:
-        "Credits",
-      link: "https://www.columbiaspectator.com/the-eye/2022/04/20/the-ultimate-challenge-tycho-bogdanowitsch-dreams-of-rocket-science/",
-      author: "Ann Vettikkal",
-      img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7ATM447FENB3PGMOYW7IQV7C2A.JPG",
-      color: "#FFD29C",
-      slots: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/VSPEJPOK6VF6DI2ZYWVKB5PGEA.png"
+      title: "Credits",
+      link: "",
+      author: "THE EYE & NEWSDEV COLLAB <3",
+      img: "",
+      color: "",
+      slots: ""
     }
   ]
 };
